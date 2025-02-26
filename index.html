@@ -100,7 +100,6 @@
 
     <!-- Information Section -->
     <section class="container mx-auto px-0 md:px-6 flex flex-col md:flex-row">
-      <!-- Main Content (Hidden on Mobile) -->
       <div class="hidden md:block md:w-3/5 md:pr-6 py-8">
         <img
           src="image/information-main.jpg"
@@ -162,7 +161,7 @@
               />
               <source
                 media="(min-width: 769px)"
-                srcset="images/information-campus.jpg"
+                srcset="image/information-campus.jpg"
               />
               <img
                 src="image/information-campus.jpg"
@@ -211,86 +210,123 @@
       </div>
     </section>
       <!-- ----- course ----- -->
-      <section class="course">
-        <h2>Start learning</h2>
-        <div class="course--category">
-          <!-- ----- Software engineering ----- -->
-          <div class="card--category">
-            <img src="./image/course-software.jpg" alt="software engineering" />
-            <div class="course--content">
-              <h3>Software engineering</h3>
-              <p>COURSES</p>
-              <p>Web Development, Mobile Development, iOT, APIs</p>
+      <section class="course bg-gray-100 py-8 px-18">
+        <div class="container mx-auto">
+            <h2 class="text-2xl font-bold text-gray-700 text-center mb-8">Start learning</h2>
+            
+            <div class="course--category hidden md:grid grid-cols-1 md:grid-cols-3 gap-6">
+              <!-- ----- Software engineering ----- -->
+              <div class="card--category bg-white">
+                <img src="./image/course-software.jpg" alt="software engineering" class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Software engineering</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">Web Development, Mobile Development, iOT, APIs</p>
+                </div>
+              </div>
+    
+              <!-- ----- Computer Art ----- -->
+              <div class="card--category bg-white">
+                <img src="./image/course-computer-art.jpg" alt="computer art"  class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Computer Art</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">
+                    Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                    Computer Animation
+                  </p>
+                </div>
+              </div>
+    
+              <!-- ----- Design ----- -->
+              <div class="card--category  bg-white">
+                <img src="./image/course-design.jpg" alt="Design" class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Design</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">User Experience Design, User Research, Visual Design</p>
+                </div>
+              </div>
+    
+              <!-- ----- Data ----- -->
+              <div class="card--category  bg-white">
+                <img src="./image/course-data.jpg" alt="Data" class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Data</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">Data Science, Big Data, SQL, Data Visualization</p>
+                </div>
+              </div>
+    
+              <!-- ----- Business ----- -->
+              <div class="card--category  bg-white">
+                <img src="./image/course-business.jpg" alt="Business" class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Business</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">Product Development, Business Development, Startup</p>
+                </div>
+              </div>
+    
+              <!-- ----- Marketing ----- -->
+              <div class="card--category  bg-white">
+                <img src="./image/course-marketing.jpg" alt="Marketing" class="w-full h-auto" />
+                <div class="course--content p-4">
+                  <h3 class="text-lg font-bold text-gray-700 mb-2">Marketing</h3>
+                  <p class="text-gray-500 mb-2">COURSES</p>
+                  <p class="text-gray-500">Analytics, Content Marketing, Mobile Marketing</p>
+                </div>
+              </div>
             </div>
-          </div>
 
-          <!-- ----- Computer Art ----- -->
-          <div class="card--category">
-            <img src="./image/course-computer-art.jpg" alt="computer art" />
-            <div class="course--content">
-              <h3>Computer Art</h3>
-              <p>COURSES</p>
-              <p>
-                Imaging & Design, Web Design, Motion Graphics & Visual Effects,
-                Computer Animation
-              </p>
-            </div>
-          </div>
-
-          <!-- ----- Design ----- -->
-          <div class="card--category">
-            <img src="./image/course-design.jpg" alt="Design" />
-            <div class="course--content">
-              <h3>Design</h3>
-              <p>COURSES</p>
-              <p>User Experience Design, User Research, Visual Design</p>
-            </div>
-          </div>
-
-          <!-- ----- Data ----- -->
-          <div class="card--category">
-            <img src="./image/course-data.jpg" alt="Data" />
-            <div class="course--content">
-              <h3>Data</h3>
-              <p>COURSES</p>
-              <p>Data Science, Big Data, SQL, Data Visualization</p>
-            </div>
-          </div>
-
-          <!-- ----- Business ----- -->
-          <div class="card--category">
-            <img src="./image/course-business.jpg" alt="Business" />
-            <div class="course--content">
-              <h3>Business</h3>
-              <p>COURSES</p>
-              <p>Product Development, Business Development, Startup</p>
-            </div>
-          </div>
-
-          <!-- ----- Marketing ----- -->
-          <div class="card--category">
-            <img src="./image/course-marketing.jpg" alt="Marketing" />
-            <div class="course--content">
-              <h3>Marketing</h3>
-              <p>COURSES</p>
-              <p>Analytics, Content Marketing, Mobile Marketing</p>
-            </div>
+            <!-- ----- course category for mobile ----- -->
+            <div class="md:hidden space-y-2">
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Software engineering</a
+            >
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Computer art</a
+            >
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Design</a
+            >
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Data</a
+            >
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Business</a
+            >
+            <a
+              href="#"
+              class="block bg-gray-200 p-4 text-center text-gray-700 font-bold"
+              >Marketing</a
+            >
           </div>
         </div>
       </section>
 
       <!-- ----- thesis ----- -->
-      <section class="thesis">
-        <h2>Thesis exhibit</h2>
+      <section class="thesis py-8">
+        <h2 class="text-2xl font-bold text-gray-700 text-center mb-8">Thesis exhibit</h2>
         <div class="thesis--content">
           <!-- ----- vidio ----- -->
-          <div class="thesis-video">
+          <div class="thesis-video w-full md:w-3/5 md:pr-6">
             <video controls muted>
-              <source src="videos/thesis.mp4" type="video/mp4" />
+              <source src="videos/thesis.mp4" type="video/mp4" class="w-full h-auto mb-4" />
               Your browser does not support the video tag.
             </video>
-            <h3>Reimagine urban</h3>
-            <p>
+            <h3 class="text-lg font-bold text-gray-700 mb-2">Reimagine urban</h3>
+            <p class="text-gray-700">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -298,10 +334,11 @@
             </p>
           </div>
         </div>
+
         <!-- ----- casestudy ----- -->
-        <div class="thesis--casestudy">
+        <div class="thesis--casestudy hidden md:block md:w-2/5">
           <!-- ----- fisma ----- -->
-          <div class="thesis-card">
+          <div class="thesis-card ">
             <div class="thesis-image">
               <img src="image/thesis-fisma.jpg" alt="Fisma" />
             </div>
